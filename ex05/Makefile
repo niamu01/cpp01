@@ -1,6 +1,6 @@
-NAME = weapon
+NAME = Karen
 CFLAGS = -Wall -Wextra -Werror
-SRCS = main.cpp Weapon.cpp HumanB.cpp #HumanA.cpp
+SRCS = Karen.cpp main.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 all : $(NAME)

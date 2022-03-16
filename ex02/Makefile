@@ -1,6 +1,6 @@
 NAME = brain
 CFLAGS = -Wall -Wextra -Werror
-SRCS = $(wildcard *.cpp)
+SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 all : $(NAME)
