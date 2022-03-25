@@ -6,12 +6,12 @@
 #    By: yeju <yeju@student.42seoul.kr>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/25 20:57:09 by yeju              #+#    #+#              #
-#    Updated: 2022/03/25 20:57:09 by yeju             ###   ########.fr        #
+#    Updated: 2022/03/25 21:01:52 by yeju             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = replace
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -std=c++98
 SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
 

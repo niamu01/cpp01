@@ -6,12 +6,12 @@
 #    By: yeju <yeju@student.42seoul.kr>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/25 18:37:49 by yeju              #+#    #+#              #
-#    Updated: 2022/03/25 18:37:50 by yeju             ###   ########.fr        #
+#    Updated: 2022/03/25 21:01:52 by yeju             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = Zombie
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -std=c++98
 SRCS = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
 OBJS = $(SRCS:.cpp=.o)
 
