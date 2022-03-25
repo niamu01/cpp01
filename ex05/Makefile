@@ -1,6 +1,18 @@
-NAME = Karen
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: yeju <yeju@student.42seoul.kr>             +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/03/25 20:56:37 by yeju              #+#    #+#              #
+#    Updated: 2022/03/25 20:56:37 by yeju             ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+NAME = Harl
 CFLAGS = -Wall -Wextra -Werror
-SRCS = Karen.cpp main.cpp
+SRCS = Harl.cpp main.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 all : $(NAME)

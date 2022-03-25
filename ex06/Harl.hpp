@@ -1,19 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   newZombie.cpp                                      :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yeju <yeju@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/25 18:37:52 by yeju              #+#    #+#             */
-/*   Updated: 2022/03/25 18:37:52 by yeju             ###   ########.fr       */
+/*   Created: 2022/03/25 20:55:49 by yeju              #+#    #+#             */
+/*   Updated: 2022/03/25 20:56:07 by yeju             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef HARL_HPP
+# define HARL_HPP
 
-Zombie	*newZombie(std::string name)
-{
-	Zombie *zombie = new Zombie(name);
-	return (zombie);
-}
+#include <iostream>
+
+class Harl {
+private:
+    void debug(void);
+    void info(void);
+    void warning(void);
+    void error(void);
+public:
+    Harl(void);
+    ~Harl(void);
+    void complain(std::string level);
+};
+
+
+#endif

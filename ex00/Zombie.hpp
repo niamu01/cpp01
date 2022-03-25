@@ -1,9 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yeju <yeju@student.42seoul.kr>             +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/03/25 18:38:01 by yeju              #+#    #+#             */
+/*   Updated: 2022/03/25 18:39:25 by yeju             ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef ZOMBIE_HPP
 # define ZOMBIE_HPP
 
 #include <iostream>
-#include <string>
-#include <cstdlib>
 
 class Zombie {
 public:
@@ -11,7 +21,6 @@ public:
 	Zombie(std::string name);
 	~Zombie(void);
 private:
-//소멸자에 Zombie의 이름을 포함한 디버깅 메시지를 추가하세요
 	std::string name;
 	std::string	_name;
 };
@@ -20,5 +29,3 @@ Zombie* newZombie(std::string name);
 void	randomChump(std::string name);
 
 #endif
-
-//사용 방식에 따라 스택영역 또는 힙 영역에 적절히 할당되어 있어야 합니다

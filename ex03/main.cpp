@@ -5,29 +5,32 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yeju <yeju@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/25 18:37:47 by yeju              #+#    #+#             */
-/*   Updated: 2022/03/25 18:37:48 by yeju             ###   ########.fr       */
+/*   Created: 2022/03/25 19:44:44 by yeju              #+#    #+#             */
+/*   Updated: 2022/03/25 20:35:23 by yeju             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "Weapon.hpp"
+#include "HumanA.hpp"
+#include "HumanB.hpp"
 
-int	main(void)
+int main()
 {
-	Zombie *zombie1;
-	Zombie *zombie2;
-	
-	zombie1 = newZombie("name1");
-	zombie2 = newZombie("name2");
-
-	randomChump("name3");
-	randomChump("name4");
-
-	zombie2->announce();
-	zombie1->announce();
-
-	delete zombie1;
-	delete zombie2;
-
-	return (0);
+	{
+		Weapon club = Weapon("crude spiked club");
+		HumanA bob("Bob", club);
+		bob.attack();
+		club.setType("some other type of club");
+		bob.attack();
+	}
+	{
+		Weapon club = Weapon("crude spiked club");
+		HumanB jim("Jim");
+		jim.attack();
+		jim.setWeapon(club);
+		jim.attack();
+		club.setType("some other type of club");
+		jim.attack();
+	}
+	return 0;
 }

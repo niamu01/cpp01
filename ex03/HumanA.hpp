@@ -1,19 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   newZombie.cpp                                      :+:      :+:    :+:   */
+/*   HumanA.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yeju <yeju@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/25 18:37:52 by yeju              #+#    #+#             */
-/*   Updated: 2022/03/25 18:37:52 by yeju             ###   ########.fr       */
+/*   Created: 2022/03/25 19:44:37 by yeju              #+#    #+#             */
+/*   Updated: 2022/03/25 20:18:52 by yeju             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef HUMAN_A_HPP
+# define HUMAN_A_HPP
 
-Zombie	*newZombie(std::string name)
-{
-	Zombie *zombie = new Zombie(name);
-	return (zombie);
-}
+#include "Weapon.hpp"
+
+class HumanA {
+public:
+	HumanA(std::string HumanName, Weapon &weapon);
+	~HumanA();
+	void attack();
+	void setWeapon(Weapon &weapon);
+	Weapon& getType() const;
+private: 
+	std::string HumanName;
+	Weapon &weapon;
+};
+
+#endif

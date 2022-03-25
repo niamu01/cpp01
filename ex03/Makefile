@@ -5,14 +5,14 @@
 #                                                     +:+ +:+         +:+      #
 #    By: yeju <yeju@student.42seoul.kr>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/03/25 20:55:57 by yeju              #+#    #+#              #
-#    Updated: 2022/03/25 20:55:57 by yeju             ###   ########.fr        #
+#    Created: 2022/03/25 20:29:40 by yeju              #+#    #+#              #
+#    Updated: 2022/03/25 20:29:45 by yeju             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = HarlFilter
+NAME = weapon
 CFLAGS = -Wall -Wextra -Werror
-SRCS = Harl.cpp main.cpp
+SRCS = main.cpp Weapon.cpp HumanB.cpp HumanA.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 all : $(NAME)
